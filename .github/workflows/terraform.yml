@@ -8,6 +8,11 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+    env:
+      AWS_ACCESS_KEY_ID: dummy
+      AWS_SECRET_ACCESS_KEY: dummy
+      AWS_EC2_METADATA_DISABLED: true
+
     steps:
       - uses: actions/checkout@v4
 
